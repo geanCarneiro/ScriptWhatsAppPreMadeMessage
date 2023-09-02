@@ -16,7 +16,7 @@ function initial() {
 
 function activeEvents() {
     const documentListener = function (e) {
-        if (e.altKey && e.keyCode == 69) {
+        if (e.altKey && e.code == "Numpad1") {
             e.preventDefault();
             e.stopPropagation();
             let el = document.querySelector('footer');
